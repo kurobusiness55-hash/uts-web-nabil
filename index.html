@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - UTS Pemrograman Web I</title>
+    <style>
+        /* css menyesuaikan*/
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #fff4e1; /* WARNA PALET: Krem Muda */
+            color: #1a312c; /* WARNA PALET: Hijau Tua */
+            line-height: 1.8;
+        }
+
+        /* 1. HALAMAN PERTAMA BESAR (HERO SECTION) SEPERTI DANIEL SUN */
+        .halaman-utama-besar {
+            min-height: 100vh; /* Memenuhi satu layar penuh */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 10%; /* Jarak pinggir luas (loss) sesuai foto */
+            background-color: #fff4e1; 
+            position: relative;
+        }
+        .halaman-utama-besar h1 {
+            font-size: 6.5rem; /* Diperbesar agar teks NABIL MAULIDAN mendominasi layar */
+            font-weight: 900;
+            letter-spacing: -4px;
+            line-height: 0.95;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #1a312c;
+        }
+        .halaman-utama-besar p {
+            font-size: 1.5rem;
+            color: #428475; /* WARNA PALET: Hijau Toska */
+            font-weight: 500;
+        }
+
+        /* 2. KONTEN KEBAWAH (MENGALIR LUAS TANPA KOTAK) */
+        .pembungkus-konten-bawah {
+            max-width: 85%; /* Membuat konten melebar luas ke pinggir skrin */
+            margin: 0 auto;
+            padding: 80px 10%; /* Menyesuaikan kerapian sisi kanan-kiri */
+        }
+        section {
+            margin-bottom: 80px; /* Jarak antar materi yang lapang */
+        }
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            letter-spacing: -1px;
+            display: inline-block;
+            border-bottom: 4px solid #89d7b7; /* Garis bawah mint estetik */
+        }
+        h3 {
+            font-size: 1.2rem;
+            color: #428475;
+            margin: 30px 0 15px 0;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* FOTO PROFIL KOTAK/PERSEGI PANJANG (Tanpa Line Linggiran) */
+        .foto-kotak-profil {
+            width: 220px;
+            height: auto; /* Mengikuti rasio asli gambar */
+            border-radius: 0; /* Menghilangkan bentuk bulat/lingkaran */
+            object-fit: cover;
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        /* TABEL MINIMALIS MODERN */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th, td {
+            padding: 16px 0; /* Hanya padding atas bawah agar loss */
+            text-align: left;
+            border-bottom: 1px solid rgba(66, 132, 117, 0.3);
+        }
+        th {
+            font-weight: 700;
+            color: #1a312c;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        /* LIST & GALERI GAMBAR */
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .baris-galeri {
+            display: flex;
+            gap: 20px;
+            margin-top: 25px;
+        }
+        .foto-galeri {
+            width: 50%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        /* TAUTAN LINK EKSTERNAL MINIMALIS */
+        .tautan-link {
+            display: inline-block;
+            color: #1a312c;
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 2px solid #1a312c;
+            margin-right: 40px;
+            margin-bottom: 15px;
+        }
+        .tautan-link:hover {
+            color: #428475;
+            border-bottom-color: #428475;
+        }
+        footer {
+            margin-top: 100px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(66, 132, 117, 0.2);
+            font-size: 0.9rem;
+            color: #428475;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="halaman-utama-besar">
+        <h1>Nabil Maulidan</h1>
+        <p>Mahasiswa Informatika & Gemar Olahraga</p>
+    </div>
+
+    <div class="pembungkus-konten-bawah">
+        
+        <div class="bagian-media">
+            <img src="gambar-pp-nabil.jpeg" alt="Foto Profil Nabil" class="foto-kotak-profil">
+        </div>
+
+        <section>
+            <h2>Tentang Saya</h2>
+            <p>
+                Halo, saya Nabil Maulidan. Saat ini saya sedang menempuh perjalanan akademik di semester awal pada program studi <strong>Teknik Informatika Universitas Siber Asia</strong> untuk kelas perkuliahan IF208. Di samping menjalankan aktivitas perkuliahan online secara mandiri, saya juga bekerja penuh waktu sebagai seorang <em>Operator NOC (Network Operations Center)</em>. Tanggung jawab harian saya berfokus pada pengawasan stabilitas jaringan, manajemen latensi perangkat, serta penanganan gangguan infrastruktur distribusi data operasional.
+            </p>
+            <p>
+                Melalui mata kuliah Pemrograman Web I yang dibimbing langsung oleh dosen kita, <strong>Pak Riad Sahara, S.SI., M.T.</strong>, saya mengeksplorasi langkah penyusunan kode halaman web dari tingkat paling dasar. Di luar kesibukan memonitor perangkat server dan menulis script jaringan, saya aktif meluangkan waktu untuk <mark>olahraga lari demi menjaga kesehatan fisik dan kebugaran tubuh tetap seimbang</mark>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Akademik & Hobi</h2>
+            
+            <h3>Riwayat Pendidikan Resmi</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jenjang Sekolah</th>
+                        <th>Institusi / Universitas</th>
+                        <th>Periode Belajar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S1 Teknik Informatika</td>
+                        <td>Universitas Siber Asia (UNSIA)</td>
+                        <td>2026</td>
+                    </tr>
+                    <tr>
+                        <td>Sekolah Menengah</td>
+                        <td>SMK YPC TASIKMALAYA</td>
+                        <td>2024/2025</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Hobi Saya</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hobi</th>
+                        <th>Keterangan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Trail Adventure</td>
+                        <td>Saya suka yang nuansa alam dan menantang dengan mengikuti Trail Adventure</td>
+                    </tr>
+                    <tr>
+                        <td>Sepedaan (Cycling)</td>
+                        <td>Saya suka menjelajah tiap kilometernya</td>
+                    </tr>
+                    <tr>
+                        <td>Trail Run</td>
+                        <td>Dikarenakan saat ini bisa ekxplor ke gunung-gunung atau alam yang ada di jawa barat</td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Kemampuan & Alur Kerja</h2>
+            
+            <h3>Keterampilan Inti Operasional:</h3>
+            <ul>
+                <li>Managemen aktivasi baru dan bantu konfigurasi penyesuaian bandwidth kepada pelanggan.</li>
+                <li>Menjaga jaringan tetap aman, dan menerima komplenan dari pelanggan.</li>
+                <li>Mengelola pengolahan data dokumen laporan berkala aktivitas tim internal.</li>
+            </ul>
+
+            <h3>Tahapan Implementasi Projek Web Mandiri:</h3>
+            <ol>
+                <li>Menyusun komponen teks dan data menggunakan elemen tag HTML semantik.</li>
+                <li>Menerapkan harmoni kombinasi warna dan spasi ruang menggunakan aturan properti CSS.</li>
+                <li>Melakukan pengecekan fungsi tautan tombol serta ketepatan pemanggilan objek gambar.</li>
+                <li>Mempublikasikan seluruh berkas jawaban ujian ke server platform hosting gratis.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Berikut Dokumentasi Kegiatan Sehari - hari</h2>
+            <p>Berikut adalah representasi visual dari aktivitas serta olahraga harian yang saya tekuni:</p>
+            <div class="baris-galeri">
+                <img src="lari2.jpeg" alt="Aktivitas Event Lari" class="foto-galeri">
+                <img src="parkiran.jpeg" alt="Aktivitas Olahraga Lari" class="foto-galeri">
+                <img src="cafee.jpeg" alt="Aktivitas Pada Saat di Cafee Shop" class="foto-galeri">
+            </div>
+        </section>
+
+        <section>
+            <h2>Beberapa Website</h2>
+            <p>Berikut adalah peyesuaian link ke arah luar sebagai berikut:</p>
+            <div>
+                <a href="https://unsia.ac.id/" target="_blank" class="tautan-link">Situs Kampus UNSIA</a>
+                <a href="https://bnn.go.id/profil/" target="_blank" class="tautan-link">Situs BNN</a>
+                <a href="https://www.dpr.go.id/" target="_blank" class="tautan-link">Situs DPR RI</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Nabil Maulidan 250401010401. Lembar Jawaban UTS Pemrograman Web I - Kelas IF208 UNSIA.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
